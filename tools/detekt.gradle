@@ -1,0 +1,10 @@
+apply plugin: "io.gitlab.arturbosch.detekt"
+
+detekt {
+    input = files("src/main/kotlin", "src/main/java")
+    config = files("$rootDir/tools/detekt-config.yml")
+}
+
+dependencies {
+    detektPlugins "io.gitlab.arturbosch.detekt:detekt-formatting:1.10.0"
+}

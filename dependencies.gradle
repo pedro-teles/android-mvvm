@@ -1,0 +1,21 @@
+ext {
+    kotlin = "1.5.0"
+    androidxCore = "1.3.1"
+    appcompat = "1.2.0"
+    materialDesign = "1.2.1"
+    constraintLayout = "2.0.1"
+    junit = "4.13.2"
+    extTest = "1.1.2"
+    espresso = "3.3.0"
+
+    dependencies = [
+            kotlin           : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin",
+            androidxCore     : "androidx.core:core-ktx:$androidxCore",
+            appcompat        : "androidx.appcompat:appcompat:$appcompat",
+            materialDesign   : "com.google.android.material:material:$materialDesign",
+            constraintLayout : "androidx.constraintlayout:constraintlayout:$constraintLayout",
+            junit            : "junit:junit:$junit",
+            extTest          : "androidx.test.ext:junit:$extTest",
+            espresso         : "androidx.test.espresso:espresso-core:$espresso"
+    ]
+}

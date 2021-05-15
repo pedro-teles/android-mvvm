@@ -1,0 +1,44 @@
+buildscript {
+    apply from: 'dependencies.gradle'
+
+    ext {
+        kotlin_version = "1.5.0"
+        gradle_version = "4.2.1"
+    }
+
+    ext {
+        sdkVersion = 30
+        buildToolsVersion = "30.0.3"
+        minSdkVersion = 21
+        targetSdkVersion = 30
+        versionName = "1.0"
+    }
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:$gradle_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+plugins {
+    id "io.gitlab.arturbosch.detekt" version "1.10.0"
+}
+
+allprojects {
+    apply from: "${rootDir}/tools/detekt.gradle"
+
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
