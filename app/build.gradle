@@ -48,6 +48,9 @@ dependencies {
     implementation dependencies.lifecycleViewModel
     implementation dependencies.lifecycleLiveData
     implementation dependencies.androidxActivity
+    implementation dependencies.coroutines
+    implementation dependencies.retrofit
+    implementation dependencies.gsonConverter
     kapt dependencies.hiltCompiler
     kapt dependencies.hiltLifecycleCompiler
     testImplementation dependencies.junit

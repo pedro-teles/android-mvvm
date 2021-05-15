@@ -18,7 +18,4 @@ object AppModule {
     fun providesApplication(@ApplicationContext context: Context): BaseApplication {
         return context as BaseApplication
     }
-
-    @Provides
-    fun provideString(): String = "I'm a random string that was injected via hilt"
 }

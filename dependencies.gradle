@@ -11,6 +11,8 @@ ext {
     hiltLifecycle = "1.0.0-alpha01"
     lifecycle = "2.3.1"
     androidxActivity = "1.1.0"
+    coroutines = "1.4.1"
+    retrofit = "2.9.0"
 
     dependencies = [
             kotlin                : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin",
@@ -27,6 +29,9 @@ ext {
             hiltLifecycleCompiler : "androidx.hilt:hilt-compiler:$hiltLifecycle",
             lifecycleViewModel    : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle",
             lifecycleLiveData     : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle",
-            androidxActivity      : "androidx.activity:activity-ktx:$androidxActivity"
+            androidxActivity      : "androidx.activity:activity-ktx:$androidxActivity",
+            coroutines            : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines",
+            retrofit              : "com.squareup.retrofit2:retrofit:$retrofit",
+            gsonConverter         : "com.squareup.retrofit2:converter-gson:$retrofit"
     ]
 }
