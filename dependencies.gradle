@@ -13,6 +13,8 @@ ext {
     androidxActivity = "1.1.0"
     coroutines = "1.4.1"
     retrofit = "2.9.0"
+    coreTesting = "2.1.0"
+    mockito = "2.2.0"
 
     dependencies = [
             kotlin                : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin",
@@ -32,6 +34,9 @@ ext {
             androidxActivity      : "androidx.activity:activity-ktx:$androidxActivity",
             coroutines            : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines",
             retrofit              : "com.squareup.retrofit2:retrofit:$retrofit",
-            gsonConverter         : "com.squareup.retrofit2:converter-gson:$retrofit"
+            gsonConverter         : "com.squareup.retrofit2:converter-gson:$retrofit",
+            coreTesting           : "androidx.arch.core:core-testing:$coreTesting",
+            coroutinesTest        : "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines",
+            mockito               : "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockito"
     ]
 }

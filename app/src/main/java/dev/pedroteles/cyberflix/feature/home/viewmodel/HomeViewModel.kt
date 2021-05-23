@@ -30,7 +30,6 @@ class HomeViewModel @ViewModelInject constructor(
     }
 
     private fun handleError(error: DefaultError) {
-        Log.e(TAG, error.errorMessage)
         mutableLiveDataState.emit(HomeViewState.Failure)
     }
 }

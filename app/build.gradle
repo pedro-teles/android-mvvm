@@ -54,6 +54,9 @@ dependencies {
     kapt dependencies.hiltCompiler
     kapt dependencies.hiltLifecycleCompiler
     testImplementation dependencies.junit
+    testImplementation dependencies.coreTesting
+    testImplementation dependencies.coroutinesTest
+    testImplementation dependencies.mockito
     androidTestImplementation dependencies.extTest
     androidTestImplementation dependencies.espresso
 }
